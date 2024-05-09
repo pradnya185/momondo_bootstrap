@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.bg-primary {
+  background-color: #141e3c !important;
+}
+.bg-secondary {
+  background-color: #5e3b7c !important;
+}
+.bg-btn-secondary {
+  background-color: #512f6e;
+}
+.bg-success {
+  background-color: #20192f !important;
+}
+.bg-info {
+  background-color: #674dac !important;
+}
+.bg-warning {
+  background-color: #ff434d !important;
+}
+.bg-danger {
+  background-color: #201a27 !important;
+}
+.text-grey {
+  color: #68646f !important;
+}
+.text-light {
+  color: #fff !important;
+}
+.text-warning {
+  color: #ff434d !important;
+}
+.top10 {
+  top: 10%;
+}
+.top-15 {
+  top: 15%;
+}
+.top-20 {
+  top: 20%;
+}
+.top-25 {
+  top: 25%;
+}
+.top-30 {
+  top: 30%;
+}
+
+.top-35 {
+  top: 35%;
+}
+.top-40 {
+  top: 40%;
+}
+
+.bottom-10 {
+  bottom: 10%;
+}
+.bottom-20 {
+  bottom: 20%;
+}
+.bottom-30 {
+  bottom: 30%;
+}
+.bottom-40 {
+  bottom: 40%;
+}
+.left-10 {
+  left: 10%;
+}
+.left-20 {
+  left: 20%;
+}
+.left-30 {
+  left: 30%;
+}
+.left-40 {
+  left: 40%;
+}
+.left-60 {
+  left: 60%;
+}
+.left-70 {
+  left: 70%;
+}
+.left-80 {
+  left: 80%;
+}
+.fs-12px {
+  font-size: 12px;
+}
+.fs-14px {
+  font-size: 14px;
+}
+.fs-15px {
+  font-size: 15px;
+}
+.fs-13px {
+  font-size: 13px;
+}
+.fs-17px {
+  font-size: 17px;
+}
+.fs-18px {
+  font-size: 18px;
+}
+.fs-20px {
+  font-size: 20px;
+}
+
+/* banner start */
+.banner {
+  width: 100% !important;
+  height: 600px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+    url("/assets/img/bg2.jpg");
+  background-position: center;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+  background-color: #ff434d !important;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  background-color: #ff434d !important;
+}
+.navbar-toggler {
+  border: 1px solid white;
+  border-radius: 6px;
+}
+
+/* banner end */
+
+/* fun section start */
+
+.fun {
+  width: 100%;
+  height: 400px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(/assets/img/fun_bg.jpg);
+  background-size: 100% 100%;
+  padding-top: 20px;
+}
+.funItem {
+  background-color: black;
+  height: 120px;
+  width: 170px;
+  padding-top: 10px;
+}
+/* fun section end */
+/* newslatter section start */
+.newslatter {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/assets/img/newslatter_bg.jpg");
+  background-position: cover;
+  background-size: 100% 100%;
+}
+/* newslatter section end */
+/* destination section start */
+.card {
+  width: 220px !important;
+  flex: 1; /* Each card should take equal space */
+  margin: 10px; /* Add some margin between cards */
+}
+/* destination section end */
+
+/* estimation section start */
+.estimate {
+  width: 100%;
+  padding: 0px auto;
+  background-color: #674dac;
+  color: #fff;
+  position: relative;
+}
+
+/* estimation section end */
+
+/* bottomlist section start */
+.bottomList {
+  background-color: #201a27;
+  height: auto;
+  margin: 0px auto;
+  padding: 30px 30px;
+  color: #fff;
+}
+
+.footer {
+  background-color: #201a27;
+  width: 100%;
+  height: auto;
+  padding: 20px 0px;
+  color: #fff;
+}
+
+/* bottomlist section end */
+
+/* footer section start */
+.footer .footerFeature ul li {
+  display: inline-block;
+  margin: 0px 5px;
+  font-weight: 600;
+}
+
+.footer .footerContent img {
+  margin-right: 10px;
+}
+.footer .logo {
+  width: 100px;
+}
+.footer .icons {
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+  justify-content: center;
+}
+.footer .footerContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .icon {
+  padding: 0px 5px;
+}
+/* footer section end */
+
+@media screen and (max-width: 992px) {
+  .card {
+    width: 220px !important;
+    flex: 1; /* Each card should take equal space */
+    margin: 10px; /* Add some margin between cards */
+  }
+  .banner {
+    width: 100% !important;
+    height: 800px;
+  }
+  .banner-heading {
+    top: 70px !important;
+  }
+  .arrow {
+    transform: rotate(90deg) !important;
+  }
+  .fun {
+    width: 100% !important;
+    height: auto !important;
+    padding-top: 40px;
+  }
+  .footer ul li,
+  footer p {
+    font-size: 14px;
+  }
+  .footer .footerContent .footerFeature ul li {
+    font-size: 10px;
+  }
+  .footer .footerContent .footerFeature {
+    font-size: 9px;
+  }
+  .footer .footerFeature .icons {
+    display: flex;
+    flex-direction: row !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card {
+    width: 220px !important;
+    flex: 1; /* Each card should take equal space */
+    margin: 10px; /* Add some margin between cards */
+  }
+  .banner {
+    width: 100% !important;
+    height: 800px;
+  }
+  .banner-heading {
+    top: 40px !important;
+  }
+  .banner-heading h1 {
+    font-size: 30px;
+  }
+  .banner-heading h2 {
+    font-size: 24px;
+  }
+  .arrow {
+    transform: rotate(90deg) !important;
+  }
+  .fun {
+    width: 100% !important;
+    height: auto !important;
+    padding-top: 40px;
+  }
+  .my2card h3 {
+    font-size: 19px;
+  }
+  .my2card p {
+    font-size: 11px;
+  }
+  .footer .footerFeature ul li {
+    font-size: 10px;
+    display: inline-block;
+    margin: 5px 5px;
+    font-weight: 600;
+  }
+  .footer .icons {
+    margin-right: 5px;
+    margin-left: 12px;
+    width: 120px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .card {
+    width: 220px !important;
+    flex: 1; /* Each card should take equal space */
+    margin: 10px; /* Add some margin between cards */
+  }
+  .banner {
+    width: 100%;
+    height: 730px;
+  }
+  .banner-heading {
+    top: 40px !important;
+  }
+  .arrow {
+    transform: rotate(90deg) !important;
+  }
+  .banner-heading h1 {
+    font-size: 25px;
+  }
+  .banner-heading h2 {
+    font-size: 19px;
+  }
+  .fun {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .my2card h3 {
+    font-size: 19px;
+  }
+  .my2card p {
+    font-size: 11px;
+  }
+  .icon {
+    margin-bottom: 5px;
+  }
+
+  .footer .icons {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;
+    margin-left: 0px;
+
+    width: 30px;
+  }
+  .footer .icon {
+    padding: 5px 0px;
+  }
+  .footer .footerFeature {
+    font-size: 7px;
+  }
+  .footer .footerContent img {
+    margin-right: 0px;
+  }
+  .countries-sm {
+    font-size: 13px;
+  }
+  .cities-sm {
+    font-size: 13px;
+  }
+  .intern-sm {
+    font-size: 13px;
+  }
+}

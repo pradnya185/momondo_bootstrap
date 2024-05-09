@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momndo - Traveling Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+<!-- Navbar start  -->
+<nav class="navbar navbar-expand-lg bg-primary ">
+    <div class="container">
+        <img src="./assets/img/Momondo-Logo.wine.png" width="150px" height="20px" alt="">
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars text-white "></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link  text-light active" aria-current="page" href="#">Flights</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  text-light" href="#">Hotel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  text-light" href="#">Car Hire</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  text-light" href="#">Trip Finder</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  text-light" href="#">Inspirations</a>
+          </li>
+        </ul>
+       
+        <div class="d-flex" >
+           
+                <ul class="navbar-nav me-auto my-2 my-lg-0 ">
+           
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle  text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./assets/img/Flag_of_the_United_States.svg" width="30px" height="20px" alt="" class="pb-1">
+                            English(GBP)
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+              <li class="nav-item">
+                <a class="nav-link  text-light" href="#">Log In</a>
+              </li>
+              </ul>
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+<!-- Navbar end  -->
+<!-- banner start -->
+<section class="banner ">
+    <div class="container ">
+        <div class="row  ">
+              <div class="col-md-10 col-sm-8  position-absolute top-15 banner-heading  ">
+                <h1 class=" fw-normal text-light">
+                    "The best place to find<br>
+                     the cheapest airfares"
+                </h1>
+                <h2 class="fw-bold mt-4 text-light">
+                  -every single time
+                </h2>
+            </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-9 col-md-9 col-sm-9 col-7 bg-secondary position-absolute bottom-10 ">
+                             
+                        <div class="nav nav-tabs border-0 d-flex d-lg-flex justify-content-lg-start justify-content-center " id="nav-tab" role="tablist">
+                          <button class=" bg-btn-secondary active px-3   nav-link  text-light mx-1 rounded-0 border-0" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"> 
+                            <a href="javascript:void(0)" class="text-decoration-none"> 
+                            <i class="fa-solid fa-plane-departure text-light"></i>
+                          <span class="text-light d-none d-sm-inline-block">Flights</span> 
+                        </a>
+                        
+                      </button>
+                          <button class=" bg-btn-secondary px-3   nav-link text-light  mx-1 rounded-0 border-0 " id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                             <a href="javascript:void(0)" class="text-decoration-none"> 
+                              <i class="fa-solid fa-hotel text-light"></i>
+                              <span class="text-light  d-none d-sm-inline-block">Hotels</span>
+                        </a>
+                      </button>
+
+                          <button class="bg-btn-secondary px-3   nav-link text-light  mx-1 rounded-0 border-0" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                            <a href="javascript:void(0)" class="text-decoration-none"> 
+                              <i class="fa-solid fa-car text-light"></i>
+                              <span class="text-light  d-none d-sm-inline-block">Cars</span>
+                          </a>
+                        </button>
+                     
+                      </div>
+                     
+                      
+                      <div class="tab-content " id="nav-tabContent">
+                        <div class="tab-pane  fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                          <form action="">
+                            <div class="row g-1 mt-2  justify-content-xxl-start">
+                                <div class="col-12 col-lg-2 mx-lg-1">
+                                  <div class="row">
+                                    <div class="col-12 col-lg-10   ">
+                                      <input type="text" class="form-control fs-12px fs-banner-input px-2 fs-md-2" placeholder="Enter origin city"  aria-label="Enter origin city"  name="origin-city  id="origin-city">
+                                    </div>
+                                    <div class="col-12 col-lg-1 ">
+                                      <div class="row justify-content-center">
+                                        <div class="col-1">
+                                          <i
+                                          class="fa-solid fa-arrow-right-arrow-left arrow "
+                                          style="color: rgb(25, 143, 143); margin-left: -10px ; margin-top: 5px;"
+                                        ></i>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                      
+                                   
+
+                               
+                                <div class="col-12 col-lg-2 mx-lg-1">
+                                  <input type="text" class="form-control fs-12px" placeholder="Enter destination city" aria-label="Enter destination city" name="destiny-city"
+                                  id="destiny-city">
+                                </div>
+                                <div class="col-12 col-lg-2 mx-lg-1" >
+                                  <input type="date" name="start-date" id="start-date" aria-label="start-date" class="form-control px-2 fs-12px">
+                                </div>
+                                <div class="col-12 col-lg-2 mx-lg-1">
+                                  <input type="date" name="end-date" id="end-date" aria-label="end-date" class="form-control px-2 fs-12px">
+                                </div>
+                                <div class="col-12 col-lg-2 mx-lg-1">
+                                  <select name="passenger" id="passenger" class="form-select fs-12px" >
+                                    <option value="1-passenger">1 passenger</option>
+                                    <option value="2-passenger">2 passenger</option>
+                                    <option value="3-passenger">3 passenger</option>
+                                    <option value="4-passenger">4 passenger</option>
+                                    <option value="5-passenger">5 passenger</option>
+                                  </select>                                </div>
+                                <div class="col-lg-1  ps-lg-2 ms-lg-1">
+                                  <input type="button" class="  d-md-none d-sm-none d-lg-block d-none submitButton btn bg-warning text-light px-md-3 py-md-4 "  style="border-radius: 50%; padding: 30px 20px  ;  margin-top: -40%;" value="Submit">
+                                </div>
+                                <div class="col-12  ">
+                                  <input type="button" class=" d-lg-none  btn bg-warning text-light py-md-2 col-12"  value="Submit">
+                                </div>
+                             
+        
+                              
+                            </div>
+                            <div class="row my-2">
+                              <div class="col-lg-3 col-md-6 col-12 mb-md-2 mb-sm-3">
+                                <select name="tripe-type" id="tripe-type" class="bg-secondary border-0 border-bottom text-light fs-14px d-block col-12 pb-1">
+                                  <option value="" selected> Trip type: Return trip</option>
+                                  <option value="Business">Business</option>
+                                  <option value="Business">Business</option>
+                                  <option value="Business">Business</option>
+                                  <option value="Business">Business</option>
+                              </select>
+                              </div>
+                              <div class="col-lg-3 col-md-6 col-12 mb-md-2 mb-sm-3">
+                                <select name="tripe-type" id="tripe-type" class="bg-secondary border-0 border-bottom text-light fs-14px col-12 pb-1">
+                                  <option value="" selected> Ticket class:Economy</option>
+                                  <option value="Economy">Economy</option>
+                                  <option value="Economy">Economy</option>  
+                                  <option value="Economy">Economy</option>
+                                  <option value="Economy">Economy</option>
+                              </select>
+                              </div>
+                              <div class="col-lg-3 col-md-6 col-12 mb-md-2 mb-sm-3">
+                                <input type="checkbox" name="direct-flight" id="flights" value="Direct-flights-only " > 
+                                <span>
+                                  <label for="flights"  class="text-light fs-14px"> Direct flights only</label>
+                                </span>
+                                
+                              </div>
+                              <div class="col-lg-3 col-md-6 col-12 mb-md-2 mb-sm-3">
+                                <input type="checkbox" name=" nearby-airports" id ="airports" value="Include-nearby-airports" >
+                                <span>
+                                 <label for="airports"  class="text-light fs-14px " > Include nearby airports</label>
+                               </span> 
+                              </div>
+                            </div>
+
+
+                          </form> 
+
+
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                          <form action="">
+                            <div class="row g-1 mt-2  justify-content-xxl-start">
+                           
+                                <div class="col-12 col-lg-2 mx-lg-1">
+                                  <div class="row">
+                                    <div class="col-12 col-lg-10   ">
+                                      <input type="text" class="form-control fs-12px fs-banner-input px-2 fs-md-2" placeholder="Enter origin city"  aria-label="Enter origin city"  name="origin-city"
+                                  id="origin-city">
+                                    </div>
+                                    <div class="col-12 col-lg-1 ">
+                                      <div class="row justify-content-center">
+                                        <div class="col-1">
+                                          <i
+                                          class="fa-solid fa-arrow-right-arrow-left arrow "
+                                          style="color: rgb(25, 143, 143); margin-left: -10px ; margin-top: 5px;"
+                                        ></i>
+                                        </div>
+                                      </div>
+                                      
+                                   
+                                    </div>
+
+                                  </div>
+                               
+                                </div>
+                                <div class="col-12 col-lg-2 mx-lg-1">
+                                  <input type="text" class="form-control fs-12px" placeholder="Enter destination city" aria-label="Enter destination city" name="destiny-city"
+                                  id="destiny-city">
+                                </div>
+                                <div class="col-12 col-lg-2 mx-lg-1" >
+                                  <input type="date" name="start-date" id="start-date" aria-label="start-date" class="form-control px-2 fs-12px">
+                                </div>
+                                <div class="col-12 col-lg-2 mx-lg-1">
+                                  <input type="date" name="end-date" id="end-date" aria-label="end-date" class="form-control px-2 fs-12px">
+                                </div>
+                                <div class="col-12 col-lg-2 mx-lg-1">
+                                  <select name="passenger" id="passenger" class="form-select fs-12px" >
+                                    <option value="1-passenger">1 passenger</option>
+                                    <option value="2-passenger">2 passenger</option>
+                                    <option value="3-passenger">3 passenger</option>
+                                    <option value="4-passenger">4 passenger</option>
+                                    <option value="5-passenger">5 passenger</option>
+                                  </select>                                </div>
+                                <div class="col-lg-1  ps-lg-2 ms-lg-1">
+                                  <input type="button" class="  d-md-none d-sm-none d-lg-block d-none submitButton btn bg-warning text-light px-md-3 py-md-4 "  style="border-radius: 50%; padding: 30px 20px  ;  margin-top: -40%;" value="Submit">
+                                </div>
+                                <div class="col-12  ">
+                                  <input type="button" class=" d-lg-none  btn bg-warning text-light py-md-2 col-12"  value="Submit">
+                                </div>
+                             
+                              
+                              
+                            </div>
+                            <div class="row my-2">
+                              <div class="col-lg-3 col-md-6 col-12 mb-md-2 mb-sm-3">
+                                <select name="tripe-type" id="tripe-type" class="bg-secondary border-0 border-bottom text-light fs-14px d-block col-12 pb-1">
+                                  <option value="" selected> Trip type: Return trip</option>
+                                  <option value="Business">Business</option>
+                                  <option value="Business">Business</option>
+                                  <option value="Business">Business</option>
+                                  <option value="Business">Business</option>
+                              </select>
+                              </div>
+                              <div class="col-lg-3 col-md-6 col-12 mb-md-2 mb-sm-3">
+                                <select name="tripe-type" id="tripe-type" class="bg-secondary border-0 border-bottom text-light fs-14px col-12 pb-1">
+                                  <option value="" selected> Ticket class:Economy</option>
+                                  <option value="Economy">Economy</option>
+                                  <option value="Economy">Economy</option>  
+                                  <option value="Economy">Economy</option>
+                                  <option value="Economy">Economy</option>
+                              </select>
+                              </div>
+                              <div class="col-lg-3 col-md-6 col-12 mb-md-2 mb-sm-3">
+                                <input type="checkbox" name="direct-flight" id="flights" value="Direct-flights-only " > 
+                                <span>
+                                  <label for="flights"  class="text-light fs-14px"> Direct flights only</label>
+                                </span>
+                                
+                              </div>
+                              <div class="col-lg-3 col-md-6 col-12 mb-md-2 mb-sm-3">
+                                <input type="checkbox" name=" nearby-airports" id ="airports" value="Include-nearby-airports" >
+                                <span>
+                                 <label for="airports"  class="text-light fs-14px " > Include nearby airports</label>
+                               </span> 
+                              </div>
+                            </div>
+
+
+                          </form> 
+                        </div>
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                          <form action="">
+                            <div class="row g-1 mt-2  justify-content-xxl-start">
+                           
+                                <div class="col-12 col-lg-2 mx-lg-1">
+                                  <div class="row">
+                                    <div class="col-12 col-lg-10   ">
+                                      <input type="text" class="form-control fs-12px fs-banner-input px-2 fs-md-2" placeholder="Enter origin city"  aria-label="Enter origin city"  name="origin-city"
+                                  id="origin-city">
+                                    </div>
+                                    <div class="col-12 col-lg-1 ">
+                                      <div class="row justify-content-center">
+                                        <div class="col-1">
+                                          <i
+                                          class="fa-solid fa-arrow-right-arrow-left arrow "
+                                          style="color: rgb(25, 143, 143); margin-left: -10px ; margin-top: 5px;"
+                                        ></i>
+                                        </div>
+                                      </div>
+                                      
+                                   
+                                    </div>
+
+                                  </div>
+                               
+                                </div>
+                                <div class="col-12 col-lg-2 mx-lg-1">
+                                  <input type="text" class="form-control fs-12px" placeholder="Enter destination city" aria-label="Enter destination city" name="destiny-city"
+                                  id="destiny-city">
+                                </div>
+                                <div class="col-12 col-lg-2 mx-lg-1" >
+                                  <input type="date" name="start-date" id="start-date" aria-label="start-date" class="form-control px-2 fs-12px">
+                                </div>
+                                <div class="col-12 col-lg-2 mx-lg-1">
+                                  <input type="date" name="end-date" id="end-date" aria-label="end-date" class="form-control px-2 fs-12px">
+                                </div>
+                                <div class="col-12 col-lg-2 mx-lg-1">
+                                  <select name="passenger" id="passenger" class="form-select fs-12px" >
+                                    <option value="1-passenger">1 passenger</option>
+                                    <option value="2-passenger">2 passenger</option>
+                                    <option value="3-passenger">3 passenger</option>
+                                    <option value="4-passenger">4 passenger</option>
+                                    <option value="5-passenger">5 passenger</option>
+                                  </select>                                </div>
+                                <div class="col-lg-1  ps-lg-2 ms-lg-1">
+                                  <input type="button" class="  d-md-none d-sm-none d-lg-block d-none submitButton btn bg-warning text-light px-md-3 py-md-4 "  style="border-radius: 50%; padding: 30px 20px  ;  margin-top: -40%;" value="Submit">
+                                </div>
+                                <div class="col-12  ">
+                                  <input type="button" class=" d-lg-none  btn bg-warning text-light py-md-2 col-12"  value="Submit">
+                                </div>
+                             
+                              
+                              
+                            </div>
+                            <div class="row my-2">
+                              <div class="col-lg-3 col-md-6 col-12 mb-md-2 mb-sm-3">
+                                <select name="tripe-type" id="tripe-type" class="bg-secondary border-0 border-bottom text-light fs-14px d-block col-12 pb-1">
+                                  <option value="" selected> Trip type: Return trip</option>
+                                  <option value="Business">Business</option>
+                                  <option value="Business">Business</option>
+                                  <option value="Business">Business</option>
+                                  <option value="Business">Business</option>
+                              </select>
+                              </div>
+                              <div class="col-lg-3 col-md-6 col-12 mb-md-2 mb-sm-3">
+                                <select name="tripe-type" id="tripe-type" class="bg-secondary border-0 border-bottom text-light fs-14px col-12 pb-1">
+                                  <option value="" selected> Ticket class:Economy</option>
+                                  <option value="Economy">Economy</option>
+                                  <option value="Economy">Economy</option>  
+                                  <option value="Economy">Economy</option>
+                                  <option value="Economy">Economy</option>
+                              </select>
+                              </div>
+                              <div class="col-lg-3 col-md-6 col-12 mb-md-2 mb-sm-3">
+                                <input type="checkbox" name="direct-flight" id="flights" value="Direct-flights-only " > 
+                                <span>
+                                  <label for="flights"  class="text-light fs-14px"> Direct flights only</label>
+                                </span>
+                                
+                              </div>
+                              <div class="col-lg-3 col-md-6 col-12 mb-md-2 mb-sm-3">
+                                <input type="checkbox" name=" nearby-airports" id ="airports" value="Include-nearby-airports" class="" >
+                                <span>
+                                 <label for="airports"  class="text-light fs-14px  " > Include nearby airports</label>
+                               </span> 
+                              </div>
+                            </div>
+
+
+                          </form> 
+                        </div>
+                      </div>
+                </div>
+            </div>
+ 
+          </div>
+        
+    </div>
+
+
+</section>
+
+
+<!-- banner end -->
+<!-- fun section start -->
+<section class="fun d-flex justify-content-center align-items-center  ">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center text-light mb-4 ">
+          <h3> SOME FUN WE COVERED</h3>
+        </div>
+      </div>
+        
+        <div class="row  text-light text-center justify-content-center align-items-center">
+          
+          <div class="col-lg-4  col-md-4  funItem mb-sm-2 mx-3 my-3">
+            <i class=" fa-solid fa-person-biking custom-icon fs-2 mb-2"></i>
+            <h4 class="fs-5">5670 M</h4>
+            <p>CYLING TRACK</p>
+          </div>
+          <div class="col-lg-4 col-md-4 funItem  mb-sm-2 mx-3 my-3">
+            <i class="fa-solid fa-map-location custom-icon fs-2  mb-2" size="400px"></i>
+            <h4 class="fs-5">480 M</h4>
+            <p class="fs-15px">DISTANCE COVERED</p>
+          </div>
+          <div class="col-lg-4  col-md-4 funItem mb-sm-2  mx-3 my-3">
+            <i class="fa-solid fa-person-hiking custom-icon fs-2  mb-2" ></i>
+            <h4 class="fs-5">5670 M</h4>
+            <p class="fs-6">ALTITUDE HIKED</p>
+          </div>
+          <div class="col-lg-4  col-md-4 funItem  mb-sm-2 mx-3 my-3">
+            <i class="fa-solid fa-sailboat custom-icon fs-2  mb-2"></i>
+            <h4 class="fs-5">180 M</h4>
+            <p>SAILING DISTANCE</p>
+          </div>
+          <div class="col-lg-4  funItem col-md-4  mb-sm-2 mx-3 my-3">
+            <i class="fa-solid fa-mountain-sun custom-icon fs-2  mb-2"></i>
+            <h4 class="fs-5">570 M</h4>
+            <p>SPENT ADVENTURE</p>
+          </div>
+          <div class="col-lg-4  funItem col-md-4  mb-sm-2 mx-3 my-3">
+            <i class="fa-solid fa-shield-dog custom-icon fs-2  mb-2"></i>
+            <h4 class="fs-5">567 M</h4>
+            <p>JUNGLE DISTANCE</p>
+          </div>
+        </div>
+    </div>
+  
+
+</section>
+
+
+
+<!-- fun section end -->
+
+<!-- newsLatter section start -->
+<section class="newslatter py-5 text-center justify-content-center text-light">
+  <div class="container">
+    <div class="row align-items-start  ">
+      <div class="col-12 col-lg-4 col-sm-12 col-md-12 "></div>
+      <div class="col-12 col-lg-8 col-md-12 col-sm-12  align-self-end ">
+        <h3 class="fs-20px">SUBSCRIBE FOR OUR TRAVEL NEWSLATTERS</h3>
+        <P class="fs-14px lh-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus molestiae ipsa delectus hic animi quas assumenda. Dolor molestias 
+          similique doloremque!</P>
+          <div class="row justify-content-center">
+            <div class="col-10 col-sm-6 ">
+              <input type="email"  class="form-control fs-12px" placeholder="Enter your email address....">
+            </div>
+           <div class="col-10 col-sm-3 mt-4 mt-sm-0">
+              <button class="btn bg-warning text-light fs-13px w-100 fw-bold  ">SEARCH</button>
+
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- newsLatter section end -->
+<!-- destination section start -->
+<section class="destination">
+  <div class="container ">
+   
+    
+  
+    <div class="row d-flex justify-content-center">
+   
+      
+         <div class="col-sm-6 col-md-4 col-lg-3 col-10 d-flex justify-content-center ">
+        <div class="card  ">
+          <div class="card-body">
+            <img src="./assets/img/1.jpg" class="card-img-top pb-2"   alt="...">
+
+            <h4 class="card-title fs-15px fw-bold"><span class="text-warning">$999</span> Rome Florence & Venice 9-Night Vocation w/As</h4>
+            <p class="card-text fs-12px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, beatae.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 col-10 d-flex justify-content-center">
+        <div class="card  ">
+          <div class="card-body">
+            <img src="./assets/img/1.jpg" class="card-img-top pb-2"   alt="...">
+
+            <h4 class="card-title fs-15px fw-bold"><span class="text-warning">$999</span> Rome Florence & Venice 9-Night Vocation w/As</h4>
+            <p class="card-text fs-12px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, beatae.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3  col-10 d-flex justify-content-center">
+        <div class="card  ">
+          <div class="card-body">
+            <img src="./assets/img/1.jpg" class="card-img-top pb-2"   alt="...">
+
+            <h4 class="card-title fs-15px fw-bold"><span class="text-warning">$999</span> Rome Florence & Venice 9-Night Vocation w/As</h4>
+            <p class="card-text fs-12px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, beatae.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3  col-10 d-flex justify-content-center">
+        <div class="card  ">
+          <div class="card-body">
+            <img src="./assets/img/1.jpg" class="card-img-top pb-2"   alt="...">
+
+            <h4 class="card-title fs-15px fw-bold"><span class="text-warning">$999</span> Rome Florence & Venice 9-Night Vocation w/As</h4>
+            <p class="card-text fs-12px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, beatae.
+            </p>
+          </div>
+        </div>
+      </div> 
+      <div class="col-sm-6 col-md-4 col-lg-3  col-10 d-flex justify-content-center">
+        <div class="card  ">
+          <div class="card-body">
+            <img src="./assets/img/1.jpg" class="card-img-top pb-2"   alt="...">
+
+            <h4 class="card-title fs-15px fw-bold"><span class="text-warning">$999</span> Rome Florence & Venice 9-Night Vocation w/As</h4>
+            <p class="card-text fs-12px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, beatae.
+            </p>
+          </div>
+        </div>
+      </div> 
+      <div class="col-sm-6 col-md-4 col-lg-3  col-10 d-flex justify-content-center">
+        <div class="card  ">
+          <div class="card-body">
+            <img src="./assets/img/1.jpg" class="card-img-top pb-2"   alt="...">
+
+            <h4 class="card-title fs-15px fw-bold"><span class="text-warning">$999</span> Rome Florence & Venice 9-Night Vocation w/As</h4>
+            <p class="card-text fs-12px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, beatae.
+            </p>
+          </div>
+        </div>
+      </div> 
+      <div class="col-sm-6 col-md-4 col-lg-3  col-10 d-flex justify-content-center">
+        <div class="card  ">
+          <div class="card-body">
+            <img src="./assets/img/1.jpg" class="card-img-top pb-2"   alt="...">
+
+            <h4 class="card-title fs-15px fw-bold"><span class="text-warning">$999</span> Rome Florence & Venice 9-Night Vocation w/As</h4>
+            <p class="card-text fs-12px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, beatae.
+            </p>
+          </div>
+        </div>
+      </div> 
+      <div class="col-sm-6 col-md-4 col-lg-3  col-10 d-flex justify-content-center">
+        <div class="card    ">
+          <div class="card-body">
+            <img src="./assets/img/1.jpg" class="card-img-top pb-2"   alt="...">
+
+            <h4 class="card-title fs-15px fw-bold"><span class="text-warning">$999</span> Rome Florence & Venice 9-Night Vocation w/As</h4>
+            <p class="card-text fs-12px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, beatae.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+
+
+    </div>
+  </div>
+</section>
+
+
+<!-- destination section end -->
+ <!-- estimate section start -->
+<section class="estimate">
+<div class="container">
+  <div class="row d-flex  align-self-center">
+    <div class="col-12 py-4 col-md-12 col-lg-10 col-sm-9 align-self-start  ">
+      <div class="row  ">
+        <div class="col-12 col-lg-12 alig-self-start">
+          <h2>GET A QUICK ESTIMATE!</h2>
+          <H4>GET A PROFFESIONAL HELP</H4>
+          <hr size="3px" width="50px" color="white" >
+        </div>
+        <div class="col-12">
+          <div class="row">
+            <div class="col col-md-6  my-2  col-sm-6  col-lg-2">
+              <select name="tripe-type" id="tripe-type" class="fs-12px form-select px-lg-2" >
+                <option value="" selected> Travel Purpose</option>
+                <option value="Business">Business</option>
+                <option value="Business">Business</option>
+                <option value="Business">Business</option>
+                <option value="Business">Business</option>
+            </select>
+            </div>
+                  <div class="col-6  my-2  col-md-6  col-sm-6  col-lg-2">
+              <input type="date" placeholder="Travel Date" class="fs-12px form-control px-lg-2">
+                    
+                  </div>
+                  <div class="col-6  my-2   col-md-6  col-sm-6  col-lg-2"> 
+              <input type="number" name="numberOfPeople" id="numberOfPeople" placeholder="Number of Peoples" min="0" class="fs-12px form-control px-lg-2">
+                    
+                  </div>
+                  <div class="col-6  my-2 col-md-6  col-sm-6 col-lg-2">
+              <input type="email" placeholder="Your Email" class=" fs-12px form-control px-lg-2">
+                    
+                  </div>
+                  <div class="col-12 my-2  col-md-12  col-sm-12 d-flex justify-content-center  col-lg-2 px-lg-2">
+                    <input type="submit" class="estimateBtn fs-12px  btn bg-warning text-light" value="Calculate here" >
+                          
+            </div>
+          </div>
+        </div>
+         </div>
+        </div>
+        <div class="col-12 col-lg-2 col-md-12 col-sm-12 align-self-end  ">
+          <img src="./assets/img/colossem.png"  width="220px" height="300px" class="collossem d-none d-lg-block  " alt="">
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- estimate section end -->
+            
+          
+
+
+  <!-- blog section start -->
+<section class="blog">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center my-5">
+        <h3 class="fs-20p ">LATEST BLOG</h3>
+        <P class="fs-14px " >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, rerum. Consequatur perferendis
+           necessitatibus, consequuntur repellendus excepturi odit esse! Dolorem sapiente odio, officia minima libero quam.</P>
+      </div>
+    </div>
+    <div class="row mx-4">
+      <div class=".flex-sm-row my2card col-lg-6 col-md-12 col-sm-12 col-12  d-sm-flex  justify-content-center  my-2 ">
+        <div class="  col-12 col-lg-6 col-sm-5 col-md-5  mb-2">
+          <img src="/assets/img/9.jpg"width="100%" height="100%" alt="">
+        </div>
+          <div class="   col-12 col-lg-6 col-sm-7 ps-sm-4 ps-lg-4 col-md-7 ps-md-4 ">
+              <h6 >Feb 01,2016</h6>
+              <h3 class="  fs-20px">10 THINGS TODO BEFORE TRAVEL</h3>
+              <P class=" fs-13px text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, nulla eum ipsa, quasi dolores in exercitationem tenetur, 
+                nobis vero qui possimus quaerat animi officia! Ipsam.</P>
+          </div>
+      </div>
+      <div class=" .flex-sm-row my2card col-lg-6 col-md-12 col-sm-12 col-12 d-sm-flex   justify-content-center my-2 ">
+        <div class="  col-12 col-lg-6 col-sm-5 col-md-5 d-block mb-2 ">
+          <img src="/assets/img/9.jpg"width="100%" height="100%" alt="">
+        </div>
+          <div class="  col-12 col-lg-6 col-sm-7 ps-sm-4 ps-lg-4 col-md-7 ps-md-4  ">
+              <h6 >Feb 01,2016</h6>
+              <h3 class="  fs-20px">10 THINGS TODO BEFORE TRAVEL</h3>
+              <P class=" fs-13px text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, nulla eum ipsa, quasi dolores in exercitationem tenetur, 
+                nobis vero qui possimus quaerat animi officia! Ipsam.</P>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- blog section end -->
+
+    <!-- /bottomList section start -->
+ <section class="bottomList">
+  <div class="container">
+    <div class="row  ">
+      <div class="col-12 col-lg-4 col-md-6 col-sm-6 pe-md-5  pe-sm-5 ">
+          <div class="row">
+            <div class="col">
+              <h3> Top Countries</h3>
+            </div>
+          </div>
+
+        <div class="row">
+          <div class="col">
+            <ul class="list-unstyled countries-sm">
+              <li><span> <i class="fa-solid fa-earth-asia" style="margin-right: 5px;"></i>Flights to </span> United States</li>
+              <li><span> <i class="fa-solid fa-earth-asia" style="margin-right: 5px;"></i>Flights to </span>United Kingdom</li>
+              <li><span><i class="fa-solid fa-earth-asia"style="margin-right: 5px;"></i>Flights to </span>Spain</li>
+              <li><span><i class="fa-solid fa-earth-asia"style="margin-right: 5px;"></i>Flights to </span>Thailand</li>
+              <li><span><i class="fa-solid fa-earth-asia"style="margin-right: 5px;"></i>Flights to </span>India</li>
+              <li><span><i class="fa-solid fa-earth-asia"style="margin-right: 5px;"></i>Flights to </span>Italy</li>
+              <li><span><i class="fa-solid fa-earth-asia"style="margin-right: 5px;"></i>Flights to </span>Germaney</li>
+              <li><span><i class="fa-solid fa-earth-asia"style="margin-right: 5px;"></i>Flights to </span>Denmark</li>
+              <li><span><i class="fa-solid fa-earth-asia"style="margin-right: 5px;"></i>Flights to </span>France</li>
+                 </ul>
+          </div>
+
+      </div>
+      </div>
+      <div class="col-12 col-lg-4 col-md-6 col-sm-6  ps-md-5  pe-sm-5">
+        <div class="row">
+          <div class="col">
+            <h3> Top Cities</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <ul class="list-unstyled cities-sm">
+              <li><span> <i class="fa-solid fa-earth-asia" style="margin-right: 5px;"></i>Flights to </span> United States</li>
+              <li><span> <i class="fa-solid fa-earth-asia" style="margin-right: 5px;"></i>Flights to </span>United Kingdom</li>
+              <li><span><i class="fa-solid fa-earth-asia"style="margin-right: 5px;"></i>Flights to </span>Spain</li>
+              <li><span><i class="fa-solid fa-earth-asia"style="margin-right: 5px;"></i>Flights to </span>Thailand</li>
+              <li><span><i class="fa-solid fa-earth-asia"style="margin-right: 5px;"></i>Flights to </span>India</li>
+              <li><span><i class="fa-solid fa-earth-asia"style="margin-right: 5px;"></i>Flights to </span>Italy</li>
+              <li><span><i class="fa-solid fa-earth-asia"style="margin-right: 5px;"></i>Flights to </span>Germaney</li>
+              <li><span><i class="fa-solid fa-earth-asia"style="margin-right: 5px;"></i>Flights to </span>Denmark</li>
+              <li><span><i class="fa-solid fa-earth-asia"style="margin-right: 5px;"></i>Flights to </span>France</li>
+              </ul>
+          </div>
+        </div>
+
+      </div>
+  <div class="col-12 col-lg-4 col-md-6 col-sm-6">
+    <div class="row">
+      <div class="col">
+        <h3>International Sites</h3>
+      </div>
+    </div>
+    <div class="row intern-sm">
+      <div class="col">
+        <ul class="list-unstyled ">
+          <li><span> <img src="/assets/img/1.png" width="15px" alt=""> </span> United States</li>
+          <li><span>  <img src="/assets/img/2.png" width="15px" alt="">  </span>United Kingdom</li>
+          <li><span> <img src="/assets/img/3.png" width="15px" alt="">  </span>Spain</li>
+          <li><span>  <img src="/assets/img/4.png" width="15px" alt="">     </span>Thailand</li>
+          <li><span> <img src="/assets/img/5.png" width="15px" alt="">     </span>India</li>
+          <li><span> <img src="/assets/img/6.png" width="15px" alt="">     </span>Italy</li>
+          <li><span>  <img src="/assets/img/1.png" width="15px" alt="">    </span>Germaney</li>
+          </ul>
+      </div>
+      <div class="col">
+        <ul class="list-unstyled">
+          <li><span> <img src="/assets/img/1.png" width="15px" alt=""> </span> United States</li>
+          <li><span>  <img src="/assets/img/2.png" width="15px" alt="">  </span>United Kingdom</li>
+          <li><span> <img src="/assets/img/3.png" width="15px" alt="">  </span>Spain</li>
+          <li><span>  <img src="/assets/img/4.png" width="15px" alt="">     </span>Thailand</li>
+          <li><span> <img src="/assets/img/5.png" width="15px" alt="">     </span>India</li>
+          <li><span> <img src="/assets/img/6.png" width="15px" alt="">     </span>Italy</li>
+          <li><span>  <img src="/assets/img/1.png" width="15px" alt="">    </span>Germaney</li>
+          </ul>
+      </div>
+    </div>
+  </div>
+
+    </div>
+  </div>
+ </section>
+
+      <!-- /bottomList section end -->
+      <!-- footer section start -->
+      <section class="footer">
+        <div class="container-fluid">
+          <div class=" footerContent">
+            <div class=" logo">
+                 <img src="/assets/img/images.png" width="60px" alt="">
+            </div>
+            <div class="col-9 footerFeature">
+            
+                <ul class="list-unstyled   ">
+                  <li  class="  fs-14px text-nowrap ">About Us</li>
+                  <li class="  fs-14px  " >Jobs</li>
+                  <li class=" fs-14px  ">Process</li>
+                  <li class="  fs-14px">Affilate</li>
+                  <li class=" fs-14px text-nowrap">Terms of Use</li>
+                  <li class=" fs-14px text-nowrap">Privacy Policy</li>
+                  <li class=" fs-14px ">Cookies</li>
+                  <li class=" fs-14px">Airlines</li>
+                  <li class="  fs-14px">Apps</li>
+                  <li class=" fs-14px  ">Help</li>
+                </ul>
+                
+                     <div class=" fs-12px">
+                       <p>consectetur adipisicing elit. Vitae ipsum dolor excepturi? Voluptatum magni eos cupiditate quae autem nobis minus.</p>
+                     </div>
+                   </div>
+            
+
+            
+            <div class=" icons  ">
+           <i class="fa-brands fa-twitter icon " style="margin: 0px 5px;" ></i>
+           <i class="fa-brands fa-facebook icon "  style="margin: 0px 5px;" ></i>
+           <i class="fa-brands fa-google icon "  style="margin: 0px 5px;"></i>
+         </div>
+       </div>
+     </div>
+   </section>
+
+     <!-- footer section end -->
+
+              
+             
+
+              
+
+               
+            
+
+           
+         
+
+             
+              
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+
