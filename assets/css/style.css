@@ -161,7 +161,7 @@
 /* newslatter section start */
 .newslatter {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("..img/newslatter_bg.jpg");
+    url("../img/newslatter_bg.jpg");
   background-position: cover;
   background-size: 100% 100%;
 }
