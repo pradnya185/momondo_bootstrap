@@ -120,7 +120,7 @@
   width: 100% !important;
   height: 600px;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
-    url("/assets/img/bg2.jpg");
+    url("../img/bg2.jpg");
   background-position: center;
   background-size: 100% 100%;
   position: relative;
