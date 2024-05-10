@@ -349,10 +349,13 @@
     font-size: 25px;
   }
   .bottom-10 {
-    bottom: 5%;
+    bottom: 10%;
 }
   .banner-heading h2 {
     font-size: 19px;
+  }
+  .submitButton{
+    padding: 3px 0px;
   }
   .fun {
     width: 100% !important;
