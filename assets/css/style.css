@@ -138,6 +138,11 @@
   border: 1px solid white;
   border-radius: 6px;
 }
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
+}
 
 /* banner end */
 
@@ -244,7 +249,7 @@
     height: 800px;
   }
   .banner-heading {
-    top: 70px !important;
+    top: 75px !important;
   }
   .arrow {
     transform: rotate(90deg) !important;
@@ -280,7 +285,7 @@
     height: 800px;
   }
   .banner-heading {
-    top: 40px !important;
+    top: 90px !important;
   }
   .banner-heading h1 {
     font-size: 30px;
@@ -325,7 +330,7 @@
     height: 730px;
   }
   .banner-heading {
-    top: 40px !important;
+    top: 70px !important;
   }
   .arrow {
     transform: rotate(90deg) !important;
@@ -333,6 +338,9 @@
   .banner-heading h1 {
     font-size: 25px;
   }
+  .bottom-10 {
+    bottom: 5%;
+}
   .banner-heading h2 {
     font-size: 19px;
   }
@@ -376,7 +384,7 @@
     padding: 0px 20px;
   }
    .para{
-    font-size: 10px;
+    font-size: 12px;
     padding-bottom: 0px;
   }
   
@@ -393,12 +401,12 @@
   
   
   .countries-sm {
-    font-size: 10px;
+    font-size: 12px;
   }
   .cities-sm {
-    font-size: 10px;
+    font-size: 12px;
   }
   .intern-sm {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
