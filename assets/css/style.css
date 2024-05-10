@@ -236,6 +236,16 @@
 .footer .icon {
   padding: 0px 5px;
 }
+.countries-sm {
+  font-size: 16px;
+}
+.cities-sm {
+  font-size: 16px;
+}
+.intern-sm {
+  font-size: 16px;
+}
+
 /* footer section end */
 
 @media screen and (max-width: 992px) {
